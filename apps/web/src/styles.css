@@ -1,0 +1,262 @@
+@import "./layout.css";
+@import "./forms.css";
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-padding: 1.5rem 0 10rem;
+  color-scheme: light dark;
+}
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--body-font);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+button,
+input,
+select,
+textarea {
+  min-height: 48px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+button {
+  padding: 0.6rem 0.95rem;
+  border-radius: 0.45rem;
+  cursor: pointer;
+  touch-action: manipulation;
+  line-height: 1.4;
+  transition:
+    background-color 120ms ease,
+    opacity 120ms ease;
+}
+button:hover:not(:disabled) {
+  background: var(--canvas);
+}
+button:active:not(:disabled) {
+  box-shadow: inset 0 0 0 2px var(--border);
+}
+button:disabled {
+  cursor: not-allowed;
+  color: var(--muted);
+}
+button.primary {
+  color: var(--on-accent, var(--canvas));
+  background: var(--accent);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+button.primary:hover:not(:disabled) {
+  background: var(--accent);
+}
+button.quiet {
+  background: transparent;
+  border-color: transparent;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+button.danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+a {
+  color: var(--accent);
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  overflow-wrap: anywhere;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  line-height: 1.2;
+}
+h1 {
+  font-size: clamp(2rem, 7vw, 2.6rem);
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 1.45rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.1rem;
+}
+p {
+  margin-bottom: 1rem;
+}
+small {
+  font-size: 1rem;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+input,
+select,
+textarea {
+  padding: 0.7rem 0.75rem;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  border-radius: 0.3rem;
+}
+textarea {
+  resize: vertical;
+}
+input[type="checkbox"] {
+  width: 1.3rem;
+  height: 1.3rem;
+  min-height: 1.3rem;
+  flex-shrink: 0;
+  accent-color: var(--accent);
+}
+input[type="file"] {
+  padding: 0.7rem 0.3rem;
+  font-size: 1rem;
+}
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+legend {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+.empty {
+  padding: 1.5rem 0;
+}
+.segmented {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.segmented button {
+  flex: 1;
+}
+.segmented button[aria-pressed="true"] {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+.date-controls {
+  margin-bottom: 1rem;
+}
+.date-controls button {
+  flex: 1;
+}
+.section-heading {
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.section-heading h2 {
+  margin: 0;
+  flex: 1;
+}
+.day-summary {
+  border-bottom: 1px solid var(--border);
+  padding: 0.5rem 0;
+}
+.day-open {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  text-align: start;
+  border-color: transparent;
+  background: transparent;
+}
+.density {
+  color: var(--muted);
+}
+.summary-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+.summary-list span {
+  color: var(--muted);
+}
+.onboarding {
+  padding-top: 2rem;
+}
+.onboarding h1 {
+  margin-bottom: 1.5rem;
+}
+.notice {
+  border-left: 3px solid var(--accent);
+  padding-left: 1rem;
+}
+.update {
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+}
+.skip {
+  position: fixed;
+  top: -10rem;
+  left: 1rem;
+  z-index: 20;
+  background: var(--surface);
+  padding: 1rem;
+}
+.skip:focus {
+  top: 1rem;
+}
+@media (min-width: 44rem) {
+  .app-shell {
+    padding-inline: 2rem;
+  }
+  .bottom-nav {
+    padding-inline: 2rem;
+  }
+}
+@media (max-width: 24rem) {
+  .app-shell {
+    padding-inline: 1rem;
+  }
+  .brand-note {
+    max-width: 7rem;
+    text-align: right;
+  }
+  .field-pair {
+    flex-wrap: wrap;
+  }
+  .field-pair > label {
+    flex-basis: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none;
+    transition: none;
+    scroll-behavior: auto;
+  }
+}

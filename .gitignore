@@ -1,0 +1,10 @@
+docs/PROFIL.local.md
+.env*
+*.gungun
+node_modules/
+**/dist/
+coverage/
+playwright-report/
+test-results/
+.superpowers/
+.graphify-private*/

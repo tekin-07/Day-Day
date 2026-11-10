@@ -1,0 +1,23 @@
+# Public project graph: omit research, handoff, private data and generated output.
+araştırma/
+ek.md
+docs/PROFIL.local.md
+graphify-out/
+.git/
+.agents/
+.codex/
+.aws/
+.env*
+*.gungun
+
+# Dependencies, build output and generated design/font/image assets.
+node_modules/
+**/node_modules/
+**/dist/
+test-results/
+playwright-report/
+coverage/
+.superpowers/
+apps/web/public/fonts/
+apps/web/public/icon-*.png
+docs/design-options/*.svg

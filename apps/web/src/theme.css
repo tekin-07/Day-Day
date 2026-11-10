@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Gungun Sans";
+  src: url("/fonts/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gungun Sans";
+  src: url("/fonts/NotoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gungun Serif";
+  src: url("/fonts/NotoSerif-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Gungun Serif";
+  src: url("/fonts/NotoSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --heading-font: "Gungun Serif", Georgia, serif;
+  --body-font: "Gungun Sans", system-ui, sans-serif;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --radius-control: 0.5rem;
+  --radius-surface: 0.25rem;
+  --radius-pill: 999px;
+  --target: 3rem;
+  --text-body: 1rem;
+  --text-title: 2rem;
+  --line-body: 1.6;
+  --motion-fast: 120ms;
+  --motion-regular: 180ms;
+  --canvas: #f6f7f2;
+  --ink: #202b25;
+  --accent: #356b51;
+  --surface: #ffffff;
+  --muted: #536257;
+  --border: #7e887e;
+  --danger: #af2828;
+  --focus: #356b51;
+  --on-accent: #ffffff;
+  --detail: #8a5c15;
+  color-scheme: light;
+}
+
+[data-theme="cool"],
+[data-theme="balanced"] {
+  --heading-font: "Gungun Sans", system-ui, sans-serif;
+}
+
+[data-theme="cool"][data-appearance="light"] {
+  color-scheme: light;
+  --canvas: #f5fafa;
+  --ink: #17282b;
+  --accent: #0b7c83;
+  --surface: #ffffff;
+  --muted: #526365;
+  --border: #77898b;
+  --danger: #af2828;
+  --focus: #0b7c83;
+  --on-accent: #ffffff;
+  --detail: #8a5c15;
+}
+
+[data-theme="cool"][data-appearance="dark"] {
+  color-scheme: dark;
+  --canvas: #0e181a;
+  --ink: #e6f2f2;
+  --accent: #5ccfc9;
+  --surface: #18272a;
+  --muted: #adc4c6;
+  --border: #728e91;
+  --danger: #ffadad;
+  --focus: #5ccfc9;
+  --on-accent: #102124;
+  --detail: #e7c377;
+}
+
+[data-theme="paper"][data-appearance="light"] {
+  color-scheme: light;
+  --canvas: #f6f7f2;
+  --ink: #202b25;
+  --accent: #356b51;
+  --surface: #ffffff;
+  --muted: #536257;
+  --border: #7e887e;
+  --danger: #af2828;
+  --focus: #356b51;
+  --on-accent: #ffffff;
+  --detail: #8a5c15;
+}
+
+[data-theme="paper"][data-appearance="dark"] {
+  color-scheme: dark;
+  --canvas: #131b17;
+  --ink: #ecf2ed;
+  --accent: #a3d6b2;
+  --surface: #1f2b23;
+  --muted: #b9c6bc;
+  --border: #839787;
+  --danger: #ffadad;
+  --focus: #a3d6b2;
+  --on-accent: #14221a;
+  --detail: #e7c377;
+}
+
+[data-theme="balanced"][data-appearance="light"] {
+  color-scheme: light;
+  --canvas: #f5f4ef;
+  --ink: #292d2a;
+  --accent: #8a4f36;
+  --surface: #ffffff;
+  --muted: #60615a;
+  --border: #898b80;
+  --danger: #af2828;
+  --focus: #8a4f36;
+  --on-accent: #ffffff;
+  --detail: #5c6648;
+}
+
+[data-theme="balanced"][data-appearance="dark"] {
+  color-scheme: dark;
+  --canvas: #1c1e1b;
+  --ink: #f2f0e9;
+  --accent: #e6a486;
+  --surface: #282c26;
+  --muted: #c4c6b8;
+  --border: #929987;
+  --danger: #ffadad;
+  --focus: #e6a486;
+  --on-accent: #2b1d17;
+  --detail: #bccaa6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0ms;
+    --motion-regular: 0ms;
+  }
+}

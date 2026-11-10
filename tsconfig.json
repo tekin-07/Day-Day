@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "types": ["node", "vitest/globals"],
+    "baseUrl": ".",
+    "paths": {
+      "@gungun/core": ["packages/core/src/index.ts"],
+      "@gungun/data": ["packages/data/src/index.ts"]
+    },
+    "resolveJsonModule": true
+  },
+  "include": [
+    "packages/**/*.ts",
+    "apps/web/src/**/*.ts",
+    "apps/web/src/**/*.tsx",
+    "tests/**/*.ts",
+    "*.config.ts",
+    "apps/web/vite.config.ts",
+    "scripts/**/*.ts"
+  ]
+}

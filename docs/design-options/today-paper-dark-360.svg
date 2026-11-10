@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="880" viewBox="0 0 360 880" role="img" aria-labelledby="title desc">
+<title id="title">Today Paper dark 360 — editorial reference</title>
+<desc id="desc">English placeholder labels and fabricated events. Static design reference, not application UI.</desc>
+<rect x="0" y="0" width="360" height="880" rx="0" fill="#131b17"/>
+<text x="20" y="30" font-family="Noto Sans, serif" font-size="13" font-weight="700" fill="#b9c6bc">SATURDAY · 07 NOVEMBER</text>
+<text x="20" y="77" font-family="Noto Serif, serif" font-size="32" font-weight="400" fill="#ecf2ed">Today</text>
+<rect x="260" y="45" width="80" height="48" rx="8" fill="#a3d6b2"/>
+<text x="272" y="75" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#14221a">+ Add</text>
+<text x="20" y="111" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#b9c6bc">A little room for your day.</text>
+<rect x="20" y="139" width="320" height="156" rx="4" fill="#1f2b23" stroke="#839787"/>
+<rect x="20" y="139" width="4" height="156" rx="0" fill="#a3d6b2"/>
+<text x="38" y="166" font-family="Noto Sans, serif" font-size="12" font-weight="700" fill="#a3d6b2">NEXT EVENT</text>
+<text x="38" y="204" font-family="Noto Serif, serif" font-size="24" font-weight="400" fill="#ecf2ed">Morning walk</text>
+<text x="38" y="236" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">09:00 — 09:30</text>
+<text x="38" y="270" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">Movement · Open details</text>
+<text x="20" y="341" font-family="Noto Serif, serif" font-size="23" font-weight="400" fill="#ecf2ed">Daily plan</text>
+<text x="267" y="340" font-family="Noto Sans, serif" font-size="14" font-weight="700" fill="#a3d6b2">History</text>
+<text x="20" y="389" font-family="Noto Sans, serif" font-size="14" font-weight="700" fill="#b9c6bc">09:00</text>
+<text x="76" y="389" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">Morning walk</text>
+<text x="76" y="440" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">30 min · Movement</text>
+<rect x="284" y="371" width="56" height="48" rx="8" fill="#1f2b23" stroke="#839787"/>
+<text x="296" y="401" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">Done</text>
+<rect x="20" y="462" width="320" height="1" rx="0" fill="#839787"/>
+<text x="20" y="495" font-family="Noto Sans, serif" font-size="14" font-weight="700" fill="#b9c6bc">11:30</text>
+<text x="76" y="495" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">Library visit</text>
+<text x="76" y="546" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">45 min · Personal</text>
+<rect x="284" y="477" width="56" height="48" rx="8" fill="#1f2b23" stroke="#839787"/>
+<text x="296" y="507" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">Done</text>
+<rect x="20" y="568" width="320" height="1" rx="0" fill="#839787"/>
+<text x="20" y="622" font-family="Noto Serif, serif" font-size="23" font-weight="400" fill="#ecf2ed">Flexible</text>
+<text x="20" y="658" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">Prepare next week’s reading list</text>
+<text x="20" y="682" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ecf2ed">for the library</text>
+<text x="20" y="714" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">No set time · 20 min · Personal</text>
+<rect x="20" y="737" width="320" height="1" rx="0" fill="#839787"/>
+<text x="20" y="771" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">Saved on this device</text>
+<rect x="0" y="794" width="360" height="86" rx="0" fill="#1f2b23"/>
+<rect x="0" y="794" width="360" height="1" rx="0" fill="#839787"/>
+<rect x="8.0" y="795" width="74.0" height="3" rx="0" fill="#a3d6b2"/>
+<text x="11.0" y="830" font-family="Noto Sans, serif" font-size="14" font-weight="700" fill="#a3d6b2">Today</text>
+<text x="101.0" y="830" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">Plan</text>
+<text x="191.0" y="830" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">Records</text>
+<text x="191.0" y="852" font-family="Noto Sans, serif" font-size="12" font-weight="400" fill="#b9c6bc">Later</text>
+<text x="281.0" y="830" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#b9c6bc">More</text>
+<rect x="150.0" y="870" width="60" height="3" rx="2" fill="#b9c6bc"/>
+</svg>

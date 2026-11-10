@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="412" height="900" viewBox="0 0 412 900" role="img" aria-labelledby="title desc">
+<title id="title">settings — editorial reference</title>
+<desc id="desc">English placeholder labels and fabricated events. Static design reference, not application UI.</desc>
+<rect x="0" y="0" width="412" height="900" rx="0" fill="#f6f7f2"/>
+<text x="20" y="35" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">More / Settings</text>
+<text x="20" y="87" font-family="Noto Serif, serif" font-size="32" font-weight="400" fill="#202b25">Settings</text>
+<text x="20" y="135" font-family="Noto Serif, serif" font-size="20" font-weight="400" fill="#202b25">Visual theme</text>
+<rect x="20" y="155" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="187" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Cool</text>
+<text x="307" y="187" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Choose</text>
+<rect x="20" y="215" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="247" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#202b25">Paper</text>
+<text x="307" y="247" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#356b51">Selected</text>
+<rect x="20" y="275" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="307" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Balanced</text>
+<text x="307" y="307" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Choose</text>
+<text x="20" y="376" font-family="Noto Serif, serif" font-size="20" font-weight="400" fill="#202b25">Appearance</text>
+<rect x="20" y="396" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="428" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Light</text>
+<text x="307" y="428" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Choose</text>
+<rect x="20" y="456" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="488" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Dark</text>
+<text x="307" y="488" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Choose</text>
+<rect x="20" y="516" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="36" y="548" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#202b25">System</text>
+<text x="307" y="548" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#356b51">Selected</text>
+<text x="20" y="605" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#202b25">Time zone</text>
+<text x="20" y="633" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#536257">Europe/Istanbul · Fixed</text>
+<rect x="20" y="660" width="372" height="1" rx="0" fill="#7e887e"/>
+<text x="20" y="697" font-family="Noto Serif, serif" font-size="20" font-weight="400" fill="#202b25">Device storage</text>
+<text x="20" y="732" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#536257">Persistence is not guaranteed. Keep a</text>
+<text x="20" y="756" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#536257">backup in Files.</text>
+<rect x="0" y="814" width="412" height="86" rx="0" fill="#ffffff"/>
+<rect x="0" y="814" width="412" height="1" rx="0" fill="#7e887e"/>
+<text x="11.0" y="850" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Today</text>
+<text x="114.0" y="850" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Plan</text>
+<text x="217.0" y="850" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Records</text>
+<text x="217.0" y="872" font-family="Noto Sans, serif" font-size="12" font-weight="400" fill="#536257">Later</text>
+<rect x="317.0" y="815" width="87.0" height="3" rx="0" fill="#356b51"/>
+<text x="320.0" y="850" font-family="Noto Sans, serif" font-size="14" font-weight="700" fill="#356b51">More</text>
+<rect x="176.0" y="890" width="60" height="3" rx="2" fill="#536257"/>
+</svg>

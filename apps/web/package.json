@@ -1,0 +1,21 @@
+{
+  "name": "@gungun/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@gungun/core": "workspace:*",
+    "@gungun/data": "workspace:*",
+    "@phosphor-icons/react": "2.1.10",
+    "@radix-ui/react-dialog": "1.3.1",
+    "dexie-react-hooks": "4.4.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-hook-form": "7.91.0",
+    "react-router-dom": "6.30.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.3.4",
+    "tailwindcss": "4.3.4"
+  }
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="412" height="1140" viewBox="0 0 412 1140" role="img" aria-labelledby="title desc">
+<title id="title">event-form — editorial reference</title>
+<desc id="desc">English placeholder labels and fabricated events. Static design reference, not application UI.</desc>
+<rect x="0" y="0" width="412" height="1140" rx="0" fill="#f6f7f2"/>
+<rect x="20" y="20" width="88" height="48" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="50" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#202b25">Cancel</text>
+<text x="20" y="112" font-family="Noto Serif, serif" font-size="30" font-weight="400" fill="#202b25">New event</text>
+<text x="20" y="158" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Title · Required</text>
+<rect x="20" y="170" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="202" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Library visit</text>
+<text x="20" y="254" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Date · Required</text>
+<rect x="20" y="266" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="298" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">2026-11-07</text>
+<text x="20" y="350" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Timing</text>
+<rect x="20" y="362" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="394" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Timed · 11:30</text>
+<text x="20" y="449" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Flexible time is also available.</text>
+<text x="20" y="499" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Duration · Minutes</text>
+<rect x="20" y="511" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="543" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">45</text>
+<text x="20" y="595" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Repeat</text>
+<rect x="20" y="607" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="639" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Once</text>
+<text x="20" y="691" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Category</text>
+<rect x="20" y="703" width="372" height="52" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="735" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Personal</text>
+<text x="20" y="787" font-family="Noto Sans, serif" font-size="15" font-weight="700" fill="#202b25">Note</text>
+<rect x="20" y="799" width="372" height="100" rx="8" fill="#ffffff" stroke="#7e887e"/>
+<text x="32" y="831" font-family="Noto Sans, serif" font-size="16" font-weight="400" fill="#202b25">Return the borrowed book.</text>
+<text x="20" y="937" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">Conflicts are reviewed before saving. Your</text>
+<text x="20" y="961" font-family="Noto Sans, serif" font-size="14" font-weight="400" fill="#536257">input remains editable.</text>
+<rect x="20" y="1010" width="372" height="48" rx="8" fill="#356b51"/>
+<text x="32" y="1040" font-family="Noto Sans, serif" font-size="16" font-weight="700" fill="#ffffff">Save event</text>
+<text x="20" y="1096" font-family="Noto Sans, serif" font-size="13" font-weight="400" fill="#536257">Editorial reference · scrollable form</text>
+</svg>

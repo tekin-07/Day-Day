@@ -24,6 +24,6 @@ Research is supporting evidence, not an alternative specification. **Planned** i
 
 ## Local use and evidence
 
-Install with `pnpm install --frozen-lockfile`, start with `pnpm dev`, and open the URL printed by Vite. `pnpm check` covers formatting/lint, strict types, unit/integration tests, architecture and production build. `pnpm test:e2e` runs browser/offline/mobile checks; `pnpm verify` runs both. Development needs local sockets; this agent environment forbids listening ports and Chromium launch.
+Install with `pnpm install --frozen-lockfile`, start with `pnpm dev`, and open the URL printed by Vite. `pnpm check` covers formatting/lint, strict types, unit/integration tests, architecture and production build. `pnpm test:e2e` runs browser/offline/mobile checks; `pnpm verify` runs both. The GitHub Actions workflow runs `pnpm check` and Chromium E2E on pushes and pull requests to `main`. This restricted agent environment cannot listen on local ports or launch Chromium, so browser results must come from a permitted local or CI runner.
 
-See the [implementation and gate record](docs/10-FAZ-0-1-PLAN.md), [installed versions](docs/VERSIONS.md), [design gallery](docs/design-options/index.html), and [conditional Phase 2–3 handoff](docs/11-FAZ-2-3-START.md). Git/GitHub are deferred by the user.
+See the [implementation and gate record](docs/10-FAZ-0-1-PLAN.md), [installed versions](docs/VERSIONS.md), [design gallery](docs/design-options/index.html), and [conditional Phase 2–3 handoff](docs/11-FAZ-2-3-START.md). Passing CI does not replace real Android checks or user acceptance.
