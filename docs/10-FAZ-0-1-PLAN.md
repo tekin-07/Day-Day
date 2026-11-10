@@ -64,4 +64,4 @@ The user ran `pnpm test:e2e` on a browser-capable machine: 2 of 16 passed, 14 fa
 - Twelve theme cases used `getByLabel` against nested select labels; the trace snapshot showed the labelled comboboxes present. Use accessible combobox role/name locators.
 - Offline reload failed at the root document. The generated worker's `ASSETS` list omitted `index.html`, so navigation fallback had no app shell. A new regression test failed before the fix; `workerSource` now always precaches the shell.
 
-After fixes, `pnpm check` passed with 42 tests. GitHub Actions browser run is pending. The phase gate remains **not accepted** until CI browser/offline/mobile evidence, Android evidence, and user acceptance are complete.
+After fixes, `pnpm check` passed with 43 tests. GitHub Actions run [42895297093](https://github.com/tekin-07/Day-Day/actions/runs/42895297093) passed `pnpm check` and all 16 Chromium browser/offline/mobile tests (19.6 seconds) on the hosted Ubuntu 26.04 runner. The phase gate remains **not accepted** until real Android evidence and user acceptance are complete.
