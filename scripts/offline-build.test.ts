@@ -4,6 +4,7 @@ import { workerSource } from "./offline-build";
 
 function worker(failInstall = false, dirty: boolean | null = null) {
   const stores = new Map<string, Map<string, Response>>();
+  const varyByOrigin = new Set<string>();
   stores.set(
     "gungun-https%3A%2F%2Fexample.test%2F::old",
     new Map([["https://example.test/index.html", new Response("old")]]),
@@ -21,8 +22,17 @@ function worker(failInstall = false, dirty: boolean | null = null) {
           if (failInstall) throw new Error("failed asset");
           for (const path of paths) store.set(path, new Response("new"));
         },
-        match: async (request: Request | string) =>
-          store.get(typeof request === "string" ? request : request.url)?.clone(),
+        match: async (request: Request | string, options?: CacheQueryOptions) => {
+          const url = typeof request === "string" ? request : request.url;
+          if (
+            varyByOrigin.has(url) &&
+            !options?.ignoreVary &&
+            typeof request !== "string" &&
+            request.headers.has("origin")
+          )
+            return undefined;
+          return store.get(url)?.clone();
+        },
       };
     },
   };
@@ -57,7 +67,7 @@ function worker(failInstall = false, dirty: boolean | null = null) {
     setTimeout,
     clearTimeout,
   });
-  return { stores, handlers, activated: () => activated };
+  return { stores, varyByOrigin, handlers, activated: () => activated };
 }
 
 describe("native offline worker", () => {
@@ -128,6 +138,22 @@ describe("native offline worker", () => {
       },
     });
     expect(await (await response)?.text()).toBe("old");
+  });
+  it("serves pre-cached assets despite an Origin variance header", async () => {
+    const runtime = worker();
+    const url = "https://example.test/assets/app.js";
+    runtime.stores
+      .get("gungun-https%3A%2F%2Fexample.test%2F::old")
+      ?.set(url, new Response("cached asset"));
+    runtime.varyByOrigin.add(url);
+    let response: Promise<Response> | undefined;
+    runtime.handlers.fetch({
+      request: new Request(url, { headers: { Origin: "https://example.test" } }),
+      respondWith: (value: Promise<Response>) => {
+        response = value;
+      },
+    });
+    expect(await (await response)?.text()).toBe("cached asset");
   });
   it("rolls failed install back without clearing the working cache", async () => {
     const { stores, handlers } = worker(true);

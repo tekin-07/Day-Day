@@ -42,12 +42,12 @@ async function offline(request) {
   const keys = (await caches.keys()).filter(key => key.startsWith(PREFIX));
   keys.sort(key => key === CACHE ? -1 : 1);
   for (const key of keys) {
-    const found = await (await caches.open(key)).match(request);
+    const found = await (await caches.open(key)).match(request, {ignoreVary:true});
     if (found) return found;
   }
   if (request.mode === 'navigate') {
     for (const key of keys) {
-      const found = await (await caches.open(key)).match(new URL('./index.html', self.registration.scope).href);
+      const found = await (await caches.open(key)).match(new URL('./index.html', self.registration.scope).href, {ignoreVary:true});
       if (found) return found;
     }
   }
